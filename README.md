@@ -14,7 +14,9 @@ Every collected file is uploaded as-is — there is no filename, extension,
 size, word-count, or LLM selection step — and every announcement becomes its
 own Markdown file named `<subject name> - <notice title> [<notice ID>].md`.
 See [plugins/icampus/DRIVE_SYNC.md](plugins/icampus/DRIVE_SYNC.md) for the
-full behavior contract (checkpoints, retries, title-edit renames).
+full behavior contract (checkpoints, retries, title-edit renames), and
+[docs/DRIVE_LAYOUT.md](docs/DRIVE_LAYOUT.md) for how `SERVER-MIRROR` is laid
+out and mirrored between Google Drive and the home server.
 
 ## A collaboration between two projects
 
@@ -44,6 +46,7 @@ and for reference.
 | `plugins/icampus/nb_notices.py` | Per-notice Markdown export |
 | `plugins/icampus/nb_filter.py`, `nb_judge.py` | Legacy NotebookLM-era selection/judgment (unused by Drive sync) |
 | `plugins/icampus/DRIVE_SYNC.md` | Behavior contract for the Drive sync |
+| `docs/DRIVE_LAYOUT.md` | How `SERVER-MIRROR` is structured and mirrored server ↔ Drive |
 | `tests/plugins/icampus/` | Collector / Drive / sync unit tests |
 | `plugins/icampus/tests/` | Announcement export tests |
 | `hermes_constants.py` | Minimal stand-in so the plugin imports standalone (see its docstring) |
