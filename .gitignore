@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Runtime state and credentials — never commit these.
+state/
+.env
+*credentials*.json
+*client_secret*.json
+*token*.json
+session.json
+last-collected.json
+notebooklm.json
+drive.json
+drive-seen.json
+*.lock
